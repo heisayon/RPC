@@ -1,0 +1,58 @@
+div {
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    margin-top: 10px;
+    margin-right: 50px;
+
+
+}
+
+#Rock {
+    background-color: black;
+    font-size: 4.5rem;
+    padding: 20px;
+}
+
+#Paper {
+    background-color: brown;
+    font-size: 4.5rem;
+    padding: 20px;
+}
+
+#Scissors {
+    background-color: yellow;
+    font-size: 4.5rem;
+    padding: 20px;
+}
+
+#scoreBoard {
+    background-color: lightblue;
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+#scoreBoardCom {
+    background-color: grey;
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+ul {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 13px;
+    width: 150px;
+    background-color: black;
+    color: yellow;
+    padding: 15px, 25px;
+}
