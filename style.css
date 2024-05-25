@@ -1,58 +1,116 @@
-div {
-    text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-button {
-    display: inline-block;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.characters {
+    border: 1px solid;
+    width: 90%;
+    border-radius: 9px;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characters button {
+    outline: none;
     border: none;
-    margin-top: 10px;
-    margin-right: 50px;
-
-
+    font-size: 4rem;
+    margin: .5em;
+    padding: .5em;
+    border-radius: .4em;
 }
 
-#Rock {
-    background-color: black;
-    font-size: 4.5rem;
-    padding: 20px;
+.rock {
+    background-color: #ccc;
 }
 
-#Paper {
-    background-color: brown;
-    font-size: 4.5rem;
-    padding: 20px;
+
+.rock:hover {
+    background-color: #504f4f;
 }
 
-#Scissors {
-    background-color: yellow;
-    font-size: 4.5rem;
-    padding: 20px;
+.rock:active,
+.paper:active,
+.scissors:active {
+    scale: .9;
 }
 
-#scoreBoard {
-    background-color: lightblue;
-    display: inline-block;
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-family: cursive;
+.paper {
+    background-color: cornflowerblue;
 }
 
-#scoreBoardCom {
-    background-color: grey;
-    display: inline-block;
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-family: cursive;
+.paper:hover {
+    background-color: rgb(79, 102, 143);
 }
 
-ul {
-    font-family: cursive;
+.scissors {
+    background-color: rgb(159, 250, 22);
+}
+
+.scissors:hover {
+    background-color: rgb(163, 206, 98);
+}
+
+.rock,
+.paper,
+.scissors {
+    transition-duration: .5s;
+    transition-property: all;
+}
+
+.score-section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-family: monospace;
+}
+
+.current-status {
+    display: none;
+    font-size: 1rem;
+    font-family: monospace;
+    padding: .5em .2em;
+}
+
+.selectedchars {
+    /* display: none; */
+    font-size: 1.2rem;
+    font-style: oblique;
+}
+
+.scoreBoard {
+    font-size: 1.5rem;
     font-weight: bold;
-    font-size: 13px;
-    width: 150px;
-    background-color: black;
-    color: yellow;
-    padding: 15px, 25px;
+}
+
+.scoreBoardCom {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+    .characters {
+        /* background-color: #ccc; */
+        flex-wrap: wrap;
+    }
+
+    .selectedchars {
+        display: none;
+        font-size: 1rem;
+        width: 200px;
+    }
 }

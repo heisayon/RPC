@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ul>
-      <li>⚠ Note: You can use the Keyboard to select the Objects</li>
-      <li>i.e R = Rock, P = Paper, S = Scissors</li>
-    </ul>
-    <div>
-      <button id="Rock" onclick="chooseCharacter('Rock')">👊</button>
-      <button id="Paper" onclick="chooseCharacter('Paper')">🧻</button>
-      <button id="Scissors" onclick="chooseCharacter('Scissors')">✂</button>
-      <p id="value"></p>
-      <p id="addedvalue"></p>
-      <p id="scoreBoard">Your Score 🧔</p>
-      <br />
-      <p id="scoreBoardCom">Computer's Score 🤖</p>
+    <div class="characters">
+      <button id="Rock" class="rock" onclick="chooseCharacter('Rock')">
+        👊
+      </button>
+      <button id="Paper" class="paper" onclick="chooseCharacter('Paper')">
+        🧻
+      </button>
+      <button
+        id="Scissors"
+        class="scissors"
+        onclick="chooseCharacter('Scissors')"
+      >
+        ✂
+      </button>
     </div>
+    <div class="score-section">
+      <p id="value" class="current-status"></p>
+      <p id="addedvalue" class="selectedchars"></p>
+      <p id="scoreBoard" class="scoreBoard">Your Score 🧔</p>
+      <p id="scoreBoardCom" class="scoreBoardCom">Computer's Score 🤖</p>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

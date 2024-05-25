@@ -9,6 +9,18 @@ const addedValue = document.getElementById("addedvalue");
 let score = 0;
 let ComputerScore = 0;
 
+Rock.addEventListener("click", () => {
+  screen.style.display = "block";
+  // addedValue.style.display = "block";
+});
+Paper.addEventListener("click", () => {
+  screen.style.display = "block";
+  // addedValue.style.display = "block";
+});
+Scissors.addEventListener("click", () => {
+  screen.style.display = "block";
+  // addedValue.style.display = "block";
+});
 function chooseCharacter(value) {
   const randomElement = Math.floor(Math.random() * 3);
   if (value === "Rock") {
